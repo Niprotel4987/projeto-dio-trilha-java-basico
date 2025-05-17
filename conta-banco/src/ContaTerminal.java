@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.math.BigDecimal;
 
 public class ContaTerminal {
     public static void main(String[] args) {
@@ -26,12 +25,12 @@ public class ContaTerminal {
             }
         } while (!formatoCorreto);
 
-        BigDecimal saldo = new BigDecimal("1000.00"); // Define o saldo inicial automaticamente como R$ 1000
+        double saldo = 1000.00; // Define o saldo inicial automaticamente como R$ 1000
 
         scanner.close();
 
         // Exibe a mensagem de confirmação com os dados fornecidos.
-        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " 
-                + agencia + ", conta " + numeroConta + " e seu saldo R$" + saldo.toPlainString() + " já está disponível para saque.");
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é "
+                + agencia + ", conta " + numeroConta + " e seu saldo R$" + saldo + " já está disponível para saque.");
     }
 }
